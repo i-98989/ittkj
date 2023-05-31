@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="这是一个老爷爷的笑声网站">
+	<meta name="keywords" content="老爷爷, 笑声, 网站">
+	<title>老爷爷的笑声</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>老爷爷的笑声</h1>
+	</header>
+	<main>
+		<div class="image-container">
+			<img src="i.png" alt="老爷爷的图片" usemap="#hotspots">
+			<map name="hotspots">
+				<area shape="rect" coords="50,50,150,150" onclick="showMessage()">
+			</map>
+		</div>
+		<button onclick="playSound()">点击听笑声</button>
+		<div class="counter">点击次数：<span id="clicks">100</span></div>
+	</main>
+	<footer>
+		<p>版权所有 &copy; 2023 老爷爷的笑声网站</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
